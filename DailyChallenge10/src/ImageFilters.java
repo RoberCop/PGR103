@@ -46,8 +46,9 @@ public class ImageFilters
                     // sets rgb to the same average value
                     int avgValue = (red + green + blue) / 3;
                     red = green = blue = avgValue;
-                } else {
-                
+                }
+                else
+                {
                     // sets each color to the inverse relative to 255
                     red = 255 - red;
                     green = 255 - green;
