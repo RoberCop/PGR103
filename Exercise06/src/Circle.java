@@ -55,6 +55,7 @@ class Circle
         return Math.abs(this.getArea() - otherCircle.getArea());
     }
     
+    @Override
     public String toString()
     {
         return "Circle[radius=" + this.radius + " color=" + this.color + "]";

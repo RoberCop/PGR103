@@ -8,7 +8,7 @@ public class TimeAndDate
         System.out.println("Enter seconds: ");
         int input = sc.nextInt();
         
-        Time timeObj = convertSeconds(input);
+        Time timeObj = convertSeconds(5999);
         System.out.println(timeObj.hours + ":" + timeObj.minutes + ":" + timeObj.seconds);
     
         System.out.println("Using printDate:");
@@ -33,7 +33,7 @@ public class TimeAndDate
         seconds %= 60;
         
         t.seconds = seconds;
-        
+    
         return t;
     }
     
@@ -75,6 +75,7 @@ class Time
     int hours;
     int minutes;
     int seconds;
+    static int num = 4;
 }
 
 class Date
