@@ -3,26 +3,26 @@ class Point
     private int x;
     private int y;
     
-    Point(final int newX, final int newY)
+    Point(final int x, final int y)
     {
-        this.x = newX;
-        this.y = newY;
+        this.x = x;
+        this.y = y;
     }
     
     @Override
     public String toString()
     {
-        return "Point: (" + this.x + "," + this.y + ")";
+        return "Point: (" + x + "," + y + ")";
     }
     
     int getX()
     {
-        return this.x;
+        return x;
     }
     
     int getY()
     {
-        return this.y;
+        return y;
     }
     
     void setX(final int newX)

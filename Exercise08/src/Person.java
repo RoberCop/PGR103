@@ -3,20 +3,20 @@ class Person
     private String name;
     private String address;
     
-    Person(String newName, String newAddress)
+    Person(String name, String address)
     {
-        this.name = newName;
-        this.address = newAddress;
+        this.name = name;
+        this.address = address;
     }
     
     String getName()
     {
-        return this.name;
+        return name;
     }
     
     String getAddress()
     {
-        return this.address;
+        return address;
     }
     
     void setAddress(String newAddress)
@@ -27,6 +27,6 @@ class Person
     @Override
     public String toString()
     {
-        return "Person[name=" + this.name + ", address=" + this.address + "]";
+        return "Person[name=" + name + ", address=" + address + "]";
     }
 }

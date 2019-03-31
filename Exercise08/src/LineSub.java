@@ -8,102 +8,102 @@ class LineSub extends Point
         this.end = new Point(endX, endY);
     }
     
-    LineSub(Point newBegin, Point newEnd)
+    LineSub(Point begin, Point end)
     {
-        super(newBegin.getX(), newBegin.getY());
-        this.end = newEnd;
+        super(begin.getX(), begin.getY());
+        this.end = end;
     }
     
     @Override
     public String toString()
     {
-        return "LineSub[begin=" + super.toString() + ", end=" + this.end.toString() + "]";
+        return "LineSub[begin=" + super.toString() + ", end=" + end.toString() + "]";
     }
     
     Point getBegin()
     {
-        return new Point(this.getX(), this.getY());
+        return new Point(getX(), getY());
     }
     
     Point getEnd()
     {
-        return this.end;
+        return end;
     }
     
     void setBegin(final int newX, final int newY)
     {
-        this.setXY(newX, newY);
+        setXY(newX, newY);
     }
     
     void setEnd(final int newX, final int newY)
     {
-        this.end.setXY(newX, newY);
+        end.setXY(newX, newY);
     }
     
     int getBeginX()
     {
-        return this.getX();
+        return getX();
     }
     
     int getBeginY()
     {
-        return this.getY();
+        return getY();
     }
     
     int getEndX()
     {
-        return this.end.getX();
+        return end.getX();
     }
     
     int getEndY()
     {
-        return this.end.getY();
+        return end.getY();
     }
     
     void setBeginX(final int newX)
     {
-        this.setX(newX);
+        setX(newX);
     }
     
     void setBeginY(final int newY)
     {
-        this.setY(newY);
+        setY(newY);
     }
     
     void setBeginXY(final int newX, final int newY)
     {
-        this.setXY(newX, newY);
+        setXY(newX, newY);
     }
     
     void setEndX(final int newX)
     {
-        this.end.setX(newX);
+        end.setX(newX);
     }
     
     void setEndY(final int newY)
     {
-        this.end.setY(newY);
+        end.setY(newY);
     }
     
     void setEndXY(final int newX, final int newY)
     {
-        this.end.setXY(newX, newY);
+        end.setXY(newX, newY);
     }
     
     private Point getVector()
     {
-        return new Point(this.end.getX() - this.getX(), this.end.getY() - this.getY());
+        return new Point(end.getX() - getX(), end.getY() - getY());
     }
     
     int getLength()
     {
-        Point vector = this.getVector();
+        Point vector = getVector();
         return (int) Math.sqrt( (vector.getX() * vector.getX()) + (vector.getY() * vector.getY()) );
     }
     
     double getGradient()
     {
-        Point vector = this.getVector();
+        Point vector = getVector();
         return (double) vector.getY() / (double) vector.getX();
     }
 }

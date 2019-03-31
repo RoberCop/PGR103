@@ -3,21 +3,21 @@ class Staff extends Person
     private String school;
     private double pay;
     
-    Staff(String newName, String newAddress, String newSchool, double newPay)
+    Staff(String name, String address, String school, double pay)
     {
-        super(newName, newAddress);
-        this.school = newSchool;
-        this.pay = newPay;
+        super(name, address);
+        this.school = school;
+        this.pay = pay;
     }
     
     String getSchool()
     {
-        return this.school;
+        return school;
     }
     
     double getPay()
     {
-        return this.pay;
+        return pay;
     }
     
     void setSchool(String newSchool)
@@ -33,7 +33,7 @@ class Staff extends Person
     @Override
     public String toString()
     {
-        return "Staff[Person" + super.toString() + ", school=" + this.school +
-            ", pay=" + String.valueOf(this.pay) + "]";
+        return "Staff[Person" + super.toString() + ", school=" + school +
+            ", pay=" + String.valueOf(pay) + "]";
     }
 }
