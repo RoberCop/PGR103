@@ -75,7 +75,6 @@ class Time
     int hours;
     int minutes;
     int seconds;
-    static int num = 4;
 }
 
 class Date
